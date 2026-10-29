@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Propuesta de redes sociales | Welleby Family Dental</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0169B5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0169B5; --navy:#00407D; --deep:#012c58; --gold:#DEAF6A; --gold-d:#8a5f1c;
+  --sky:#EAF3FB; --sky-2:#D8E8F6; --paper:#fff;
+  --ink:#0B2540; --mute:#46607c; --line:rgba(0,64,125,.16);
+  --on-navy:#fff; --on-navy-dim:rgba(255,255,255,.78);
+  --ease:cubic-bezier(.23,1,.32,1);
+  --r:18px; --gutter:clamp(18px,4.4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%}
+body{font-family:"Open Sans",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(1240px,100% - var(--gutter)*2);margin-inline:auto}
+.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;letter-spacing:-.01em}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:78px}
+.brand img{height:58px;width:auto}
+.steps{display:flex;gap:4px}
+.steps a{font-size:13.5px;font-weight:600;text-decoration:none;color:var(--mute);padding:10px 16px;border-radius:99px;transition:background .2s var(--ease),color .2s var(--ease)}
+.steps a b{font-weight:600;margin-right:8px;color:var(--blue)}
+.steps a.on{background:var(--sky);color:var(--navy)}
+@media (hover:hover) and (pointer:fine){.steps a:hover{background:var(--sky);color:var(--navy)}}
+
+/* hero */
+.hero{background:radial-gradient(900px 480px at 92% 0%,rgba(222,175,106,.28),transparent 60%),linear-gradient(160deg,#fff 0%,var(--sky) 55%,var(--sky-2) 100%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,5vw,72px);align-items:center;padding:clamp(40px,6vw,72px) 0 clamp(44px,6vw,80px)}
+.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue)}
+.hero h1{font-size:clamp(46px,7vw,96px);line-height:.98;margin:18px 0 22px;text-wrap:balance;color:var(--navy)}
+.hero h1 em{font-style:italic;padding-bottom:.1em;display:inline-block;color:var(--blue)}
+.hero p.lead{font-size:clamp(17px,1.8vw,20px);color:var(--mute);max-width:46ch}
+.for{margin-top:22px;font-size:15px;color:var(--mute)}
+.for b{color:var(--ink);font-weight:600}
+.path{margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:640px}
+.path a{display:block;text-decoration:none;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r);background:rgba(255,255,255,.75);transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s}
+.path a:active{transform:scale(.97)}
+.path small{display:block;font-size:12px;letter-spacing:.14em;color:var(--blue);font-weight:600}
+.path span{display:block;margin-top:4px;font-weight:600;font-size:15px;line-height:1.3;color:var(--navy)}
+@media (hover:hover) and (pointer:fine){.path a:hover{transform:translateY(-3px);background:#fff;box-shadow:0 18px 36px -22px rgba(0,64,125,.5)}}
+.collage{position:relative;min-height:clamp(380px,46vw,600px)}
+.arch{position:absolute;right:0;top:0;width:78%;aspect-ratio:4/5;border-radius:999px 999px var(--r) var(--r);overflow:hidden;background:var(--navy);box-shadow:0 40px 80px -40px rgba(0,64,125,.65)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.disc{position:absolute;left:0;bottom:2%;width:46%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid #fff;background:var(--navy);box-shadow:0 30px 60px -30px rgba(0,64,125,.65)}
+.disc img{width:100%;height:100%;object-fit:cover;object-position:40% 55%}
+
+/* sections */
+section.blk{padding:clamp(64px,9vw,112px) 0}
+#hoy{background:var(--paper)}
+#propuesta{background:var(--sky)}
+#material{background:var(--paper)}
+.sec-head{max-width:760px;margin-bottom:clamp(30px,5vw,52px)}
+.sec-head .eyebrow{display:block;margin-bottom:12px}
+.sec-head h2{font-size:clamp(36px,5.2vw,62px);line-height:1.02;text-wrap:balance;color:var(--navy)}
+.sec-head p{margin-top:16px;color:var(--mute);max-width:58ch;font-size:clamp(16px,1.6vw,18px)}
+
+/* hoy */
+.stats{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:clamp(28px,4vw,44px)}
+.stat{padding:22px 16px 22px 0}
+.stat + .stat{padding-left:18px;border-left:1px solid var(--line)}
+.stat b{font-variant-numeric:lining-nums;display:block;font-family:"Cormorant Garamond",serif;font-weight:700;font-size:clamp(40px,4.4vw,60px);line-height:1;color:var(--navy)}
+.stat span{display:block;margin-top:8px;font-size:13.5px;color:var(--mute);line-height:1.35}
+.quote{border-radius:var(--r);background:linear-gradient(150deg,var(--navy),var(--deep));color:var(--on-navy);padding:clamp(26px,4vw,48px);margin-bottom:clamp(28px,4vw,44px);display:grid;grid-template-columns:auto 1fr;gap:clamp(14px,3vw,36px);align-items:start}
+.quote .mark{font-family:"Cormorant Garamond",serif;font-size:clamp(90px,12vw,150px);line-height:.7;color:var(--gold);font-weight:700}
+.quote blockquote{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(24px,3vw,38px);line-height:1.22;text-wrap:pretty}
+.quote cite{display:block;margin-top:16px;font-family:"Open Sans",sans-serif;font-style:normal;font-size:14.5px;color:var(--on-navy-dim)}
+.quote cite b{color:#fff;font-weight:600}
+.now{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(16px,2.4vw,32px);align-items:start}
+.now .wide{grid-column:1/-1}
+.shot{margin:0}
+.shot .win{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 30px 60px -40px rgba(0,64,125,.5);cursor:zoom-in;transition:transform .3s var(--ease),box-shadow .3s var(--ease);display:block;width:100%;padding:0}
+.shot .win:active{transform:scale(.985)}
+.shot .win img{width:100%;height:auto}
+.shot.wide .win{max-width:880px}
+@media (hover:hover) and (pointer:fine){.shot .win:hover{transform:translateY(-6px);box-shadow:0 40px 70px -36px rgba(0,64,125,.55)}}
+.shot figcaption{padding:16px 4px 0;display:grid;gap:4px}
+.shot figcaption b{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--blue)}
+.shot figcaption span{font-size:16.5px;line-height:1.4;font-weight:500}
+.shot figcaption small{font-size:13.5px;color:var(--mute)}
+
+/* propuesta */
+.stage{display:grid;grid-template-columns:1fr minmax(320px,500px) 1fr;gap:clamp(24px,4vw,64px);align-items:center}
+.notes{display:grid;gap:34px}
+.note{max-width:300px}
+.notes.r .note{margin-left:auto}
+.note h3{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:28px;line-height:1.05;margin-bottom:8px;color:var(--navy)}
+.note p{font-size:15px;color:var(--mute);line-height:1.55}
+.phone{position:relative;border-radius:clamp(44px,12vw,64px);padding:clamp(9px,2.6vw,13px);background:linear-gradient(145deg,#1d2c40,#05090f 60%);box-shadow:0 50px 90px -40px rgba(0,40,80,.8),0 0 0 1.5px rgba(0,40,80,.25);cursor:zoom-in;transition:transform .35s var(--ease);-webkit-tap-highlight-color:transparent;max-width:500px;margin-inline:auto;width:100%}
+.phone:active{transform:scale(.99)}
+.phone .screen{border-radius:clamp(34px,9.6vw,52px);overflow:hidden;background:#fff}
+.phone .screen img{width:100%;height:auto}
+.phone .island{position:absolute;top:calc(clamp(9px,2.6vw,13px) + 10px);left:50%;transform:translateX(-50%);width:26%;height:clamp(18px,5vw,26px);border-radius:99px;background:#05090f}
+.phone .zoom{position:absolute;right:18px;bottom:18px;font-size:12.5px;font-weight:600;background:var(--navy);color:#fff;padding:10px 16px;border-radius:99px}
+.rail-head{margin:clamp(56px,8vw,96px) 0 20px}
+.rail-head h3{font-size:clamp(30px,4vw,46px);line-height:1.02;color:var(--navy)}
+.rail-head p{margin-top:10px;font-size:14.5px;color:var(--mute)}
+.rail-wrap{position:relative}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gutter) 22px;margin:0 calc(var(--gutter)*-1);scrollbar-width:thin;scrollbar-color:var(--blue) transparent;-webkit-overflow-scrolling:touch;scroll-padding-left:var(--gutter)}
+.rail::-webkit-scrollbar{height:6px}.rail::-webkit-scrollbar-thumb{background:var(--blue);border-radius:9px}
+.post{flex:0 0 clamp(236px,64vw,330px);scroll-snap-align:start;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--navy);cursor:zoom-in;padding:0;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.post:active{transform:scale(.98)}
+.post img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+@media (hover:hover) and (pointer:fine){.post:hover{transform:translateY(-6px);box-shadow:0 34px 60px -32px rgba(0,64,125,.6)}}
+.arrows{display:none;gap:10px;margin-top:6px}
+@media (hover:hover) and (pointer:fine){.arrows{display:flex}}
+.arrows button{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:20px;transition:background .2s var(--ease),color .2s var(--ease),transform .16s var(--ease)}
+.arrows button:hover{background:var(--blue);color:#fff}
+.arrows button:active{transform:scale(.94)}
+
+/* material */
+.mat{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:clamp(180px,24vw,320px);gap:clamp(12px,1.8vw,22px)}
+.ph{margin:0;position:relative;min-height:0}
+.ph button{display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:zoom-in;border-radius:var(--r);overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.ph button:active{transform:scale(.985)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);font-size:13px;font-weight:600;color:#fff;background:rgba(0,40,80,.86);padding:7px 14px;border-radius:99px;pointer-events:none}
+@media (hover:hover) and (pointer:fine){.ph button:hover{transform:translateY(-5px);box-shadow:0 32px 56px -30px rgba(0,64,125,.6)}}
+.mat .a{grid-column:span 4;grid-row:span 2}
+.mat .b{grid-column:span 2;grid-row:span 2}
+.mat .c{grid-column:span 2}.mat .d{grid-column:span 2}.mat .e{grid-column:span 2}
+
+/* cierre */
+.close{background:var(--sky);padding:clamp(56px,8vw,100px) 0 40px}
+.close-card{position:relative;border-radius:clamp(24px,4vw,40px);padding:clamp(30px,6vw,76px);background:radial-gradient(800px 420px at 100% 0%,rgba(1,105,181,.75),transparent 62%),linear-gradient(150deg,var(--navy),var(--deep) 70%);color:var(--on-navy);display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,72px)}
+.close-card h2{font-size:clamp(38px,5.2vw,66px);line-height:1;text-wrap:balance}
+.close-card h2 em{font-style:italic;display:inline-block;padding-bottom:.1em;color:var(--gold)}
+.close-card p.lead{margin-top:20px;color:var(--on-navy-dim);max-width:46ch;font-size:clamp(15.5px,1.6vw,18px)}
+.svc{display:grid;align-content:start}
+.svc div{padding:22px 0;border-top:1px solid rgba(255,255,255,.22);font-size:15.5px;color:var(--on-navy-dim);line-height:1.55}
+.svc div:last-child{border-bottom:1px solid rgba(255,255,255,.22)}
+.svc b{display:block;color:#fff;font-family:"Cormorant Garamond",serif;font-weight:700;font-size:28px;line-height:1.05;margin-bottom:6px}
+.sign{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-top:30px;border-top:1px solid rgba(255,255,255,.22)}
+.sign p{font-size:15px;color:var(--on-navy-dim)}
+.sign b{display:block;color:#fff;font-size:19px;font-weight:600}
+.contact{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.contact a{display:inline-flex;align-items:center;min-height:50px;padding:12px 24px;border-radius:99px;border:1px solid rgba(255,255,255,.5);font-weight:600;font-size:15px;text-decoration:none;overflow-wrap:anywhere;transition:background .2s var(--ease),color .2s var(--ease),transform .16s var(--ease)}
+.contact li:first-child a{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.contact a:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.contact a:hover{transform:translateY(-2px)}.contact li:not(:first-child) a:hover{background:rgba(255,255,255,.14)}}
+footer{padding:28px 0 52px;color:var(--mute);font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
+
+/* lightbox */
+dialog{border:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:#fff}
+dialog::backdrop{background:rgba(2,16,34,.93);backdrop-filter:blur(6px)}
+dialog .box{height:100%;overflow:auto;display:flex;justify-content:center;padding:72px 12px 40px;-webkit-overflow-scrolling:touch}
+dialog img{width:min(620px,100%);height:auto;border-radius:var(--r);align-self:flex-start;background:#fff}
+dialog.wide img{width:min(1100px,100%)}
+dialog .x,dialog .nav{position:fixed;z-index:2;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(0,40,80,.92);color:#fff;cursor:pointer;display:grid;place-items:center}
+dialog .x{top:14px;right:14px;width:48px;height:48px;font-size:24px}
+dialog .nav{top:50%;width:48px;height:48px;font-size:22px;transform:translateY(-50%)}
+dialog .prev{left:12px}dialog .next{right:12px}
+dialog .x:active{transform:scale(.94)}
+dialog .nav:active{transform:translateY(-50%) scale(.94)}
+@media (max-width:760px){dialog .nav{top:auto;bottom:18px;transform:none}dialog .nav:active{transform:scale(.94)}}
+dialog .cap{position:fixed;left:0;right:0;bottom:22px;text-align:center;font-size:13px;color:var(--on-navy-dim);pointer-events:none}
+@media (max-width:760px){dialog .cap{bottom:34px}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr}
+  .collage{max-width:520px;width:100%;margin-inline:auto;min-height:420px}
+  .stage{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
+  .phone-col{order:-1}
+  .notes{gap:24px}.note{max-width:none}.notes.r .note{margin-left:0}
+  .close-card{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .stat:nth-child(4){padding-left:0;border-left:0}
+  .stat:nth-child(n+4){border-top:1px solid var(--line)}
+}
+@media (max-width:760px){
+  .steps{display:none}
+  .brand img{height:50px}
+  .top .wrap{height:68px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(n){padding-left:18px;border-left:1px solid var(--line);border-top:0}
+  .stat:nth-child(odd){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .path{grid-template-columns:1fr}
+  .path a{display:flex;align-items:baseline;gap:14px}
+  .path span{margin:0}
+  .now{grid-template-columns:1fr}
+  .quote{grid-template-columns:1fr}
+  .quote .mark{line-height:.5;height:.5em}
+  .mat{grid-template-columns:1fr 1fr;grid-auto-rows:clamp(150px,44vw,240px)}
+  .mat .a{grid-column:span 2;grid-row:span 1}
+  .mat .b{grid-column:span 1;grid-row:span 2}
+  .mat .c,.mat .d,.mat .e{grid-column:span 1}
+  .sign{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms!important;animation:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Welleby Family Dental"><img src="img/logo.webp" alt="Logo de Welleby Family Dental" width="171" height="58"></a>
+    <nav class="steps" aria-label="Recorrido">
+      <a href="#hoy"><b>01</b>Hoy</a>
+      <a href="#propuesta"><b>02</b>Propuesta</a>
+      <a href="#material"><b>03</b>Material</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow rv">Propuesta de redes sociales</div>
+        <h1 class="serif rv" style="--d:.06s">Sus redes, a la altura de <em>su consultorio</em>.</h1>
+        <p class="lead rv" style="--d:.12s">Con 4.8 estrellas y 481 reseñas en Google, sus pacientes ya hablan muy bien de usted. Así podrían verse su Instagram y su Facebook.</p>
+        <p class="for rv" style="--d:.18s">Preparada para <b>Dra. Zaileen Juma</b> &middot; Sunrise, FL</p>
+        <div class="path rv" style="--d:.24s">
+          <a href="#hoy"><small>01</small><span>Cómo están hoy</span></a>
+          <a href="#propuesta"><small>02</small><span>Cómo podrían verse</span></a>
+          <a href="#material"><small>03</small><span>Material que ya tenemos</span></a>
+        </div>
+      </div>
+      <div class="collage rv" style="--d:.1s" aria-hidden="true">
+        <div class="arch"><img src="img/sala-espera.webp" alt="" width="1300" height="975"></div>
+        <div class="disc"><img src="img/operatorio-1.webp" alt="" width="1300" height="975"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 TODAY -->
+  <section class="blk" id="hoy">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">01 &middot; Hoy</span>
+        <h2 class="serif">Una gran reputación, lista para verse en redes</h2>
+        <p>Sus pacientes la califican muy bien en Google. Sus redes son el siguiente lugar para mostrar quién es usted. Así están hoy sus perfiles.</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat rv"><b>4.8</b><span>calificación en Google</span></div>
+        <div class="stat rv" style="--d:.05s"><b>481</b><span>reseñas en Google</span></div>
+        <div class="stat rv" style="--d:.1s"><b>93</b><span>seguidores en Instagram</span></div>
+        <div class="stat rv" style="--d:.15s"><b>8</b><span>publicaciones en Instagram</span></div>
+        <div class="stat rv" style="--d:.2s"><b>2018</b><span>año de la última publicación de Instagram (julio)</span></div>
+        <div class="stat rv" style="--d:.25s"><b>69</b><span>seguidores en Facebook</span></div>
+      </div>
+
+            <div class="now">
+        <figure class="shot wide rv">
+          <button type="button" class="win" data-zoom="img/hoy-ig-perfil.webp" data-g="hoy" data-alt="Captura del perfil de Instagram @wellebyfamilydental"><img src="img/hoy-ig-perfil.webp" alt="Captura del perfil de Instagram @wellebyfamilydental: 93 seguidores, biografía con la Dra. Zaileen Juma, dirección y teléfono" width="1000" height="262" loading="lazy"></button>
+          <figcaption><b>Instagram &middot; perfil</b><span>Su nombre, su dirección y su teléfono ya están en su lugar. El perfil está listo para recibir contenido nuevo.</span><small>93 seguidores &middot; 8 publicaciones &middot; última publicación en julio de 2018</small></figcaption>
+        </figure>
+        <figure class="shot rv">
+          <button type="button" class="win" data-zoom="img/hoy-ig-grilla.webp" data-g="hoy" data-alt="Grilla de Instagram, difuminada para proteger la privacidad de los pacientes"><img src="img/hoy-ig-grilla.webp" alt="Grilla de Instagram con fotos de casos clínicos, difuminada para proteger la privacidad de los pacientes" width="1000" height="560" loading="lazy"></button>
+          <figcaption><b>Instagram &middot; publicaciones</b><span>Fotos de casos clínicos. Aquí están difuminadas para proteger la privacidad de sus pacientes.</span><small>Hay espacio para sumar su consultorio, su equipo y sus servicios</small></figcaption>
+        </figure>
+        <figure class="shot rv" style="--d:.1s">
+          <button type="button" class="win" data-zoom="img/hoy-fb.webp" data-g="hoy" data-alt="Captura de la página de Facebook Welleby Family Dental"><img src="img/hoy-fb.webp" alt="Captura de la página de Facebook de Welleby Family Dental con un artículo compartido desde su sitio" width="1100" height="739" loading="lazy"></button>
+          <figcaption><b>Facebook &middot; página</b><span>Activa, y comparte artículos de su sitio. Sus propias fotos se verían muy bien junto a ellos.</span><small>69 seguidores &middot; 94% la recomienda (16 opiniones) &middot; últimas publicaciones el 23 y el 13 de octubre de 2026</small></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 PROPOSAL -->
+  <section class="blk" id="propuesta">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">02 &middot; Propuesta</span>
+        <h2 class="serif">Así podría verse @wellebyfamilydental</h2>
+        <p>Su logo, historias destacadas por tema y una grilla con un solo lenguaje visual, en el azul y el dorado de su marca.</p>
+      </div>
+
+      <div class="stage">
+        <div class="notes l">
+          <div class="note rv"><h3>Perfil con su marca</h3><p>Su logo, su azul y su dorado, y su dirección y teléfono a la vista.</p></div>
+          <div class="note rv" style="--d:.08s"><h3>Historias destacadas</h3><p>Servicios, familia, alineadores, su consultorio y cómo llegar, ordenados por tema.</p></div>
+          <div class="note rv" style="--d:.16s"><h3>Grilla coherente</h3><p>Cada publicación con la misma tipografía y paleta, reconocible a primera vista.</p></div>
+        </div>
+
+        <div class="phone-col rv" style="--d:.1s">
+          <div class="phone" role="button" tabindex="0" aria-label="Ampliar el feed propuesto" data-zoom="img/feed.webp" data-g="prop" data-alt="Feed propuesto de Instagram de Welleby Family Dental completo">
+            <div class="screen"><img src="img/feed.webp" alt="Feed propuesto de Instagram: perfil con logo, historias destacadas y grilla de seis publicaciones" width="1080" height="2074"></div>
+            <div class="island" aria-hidden="true"></div>
+            <div class="zoom" aria-hidden="true">Tocar para ampliar</div>
+          </div>
+        </div>
+
+        <div class="notes r">
+          <div class="note rv"><h3>Mensajes que se entienden</h3><p>Textos breves sobre cada servicio, con una invitación clara a pedir una cita.</p></div>
+          <div class="note rv" style="--d:.08s"><h3>Fotos reales</h3><p>Su propio consultorio, su equipo y sus salas de tratamiento, sin fotos de banco de imágenes.</p></div>
+          <div class="note rv" style="--d:.16s"><h3>Facebook al día</h3><p>Las mismas piezas en su página de Facebook, junto con los artículos que ya comparte.</p></div>
+        </div>
+      </div>
+
+      <div class="rail-head rv">
+        <h3 class="serif">Seis publicaciones, de cerca</h3>
+        <p>Deslice para ver más &middot; toque para ampliar. Las fotos de estas publicaciones son de su propio consultorio.</p>
+      </div>
+      <div class="rail-wrap">
+        <div class="rail rv" id="rail" aria-label="Publicaciones propuestas">
+          <button type="button" class="post" data-zoom="img/post1.webp" data-g="prop" data-alt="Publicación propuesta 1"><img src="img/post1.webp" alt="Publicación 1: Conozca a su dentista, la Dra. Zaileen Juma" width="900" height="1125" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post2.webp" data-g="prop" data-alt="Publicación propuesta 2"><img src="img/post2.webp" alt="Publicación 2: Un consultorio pequeño. Toda nuestra atención." width="900" height="1125" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post3.webp" data-g="prop" data-alt="Publicación propuesta 3"><img src="img/post3.webp" alt="Publicación 3: Odontología completa para toda la familia" width="900" height="1125" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post4.webp" data-g="prop" data-alt="Publicación propuesta 4"><img src="img/post4.webp" alt="Publicación 4: 4.8 en Google, 481 reseñas" width="900" height="1125" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post5.webp" data-g="prop" data-alt="Publicación propuesta 5"><img src="img/post5.webp" alt="Publicación 5: Alineadores transparentes" width="900" height="1125" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post6.webp" data-g="prop" data-alt="Publicación propuesta 6"><img src="img/post6.webp" alt="Publicación 6: Búsquenos en Welleby Plaza" width="900" height="1125" loading="lazy"></button>
+        </div>
+        <div class="arrows">
+          <button type="button" id="rprev" aria-label="Anterior">&larr;</button>
+          <button type="button" id="rnext" aria-label="Siguiente">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 MATERIAL -->
+  <section class="blk" id="material">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">03 &middot; Material</span>
+        <h2 class="serif">Su consultorio ya tiene mucho para mostrar</h2>
+        <p>Estas son fotos reales de su consultorio en Google Maps. Sumaríamos fotos suyas y de su equipo apenas las tengamos.</p>
+      </div>
+      <div class="mat">
+        <figure class="ph a rv"><button type="button" data-zoom="img/sala-espera.webp" data-g="mat" data-alt="Sala de espera"><img src="img/sala-espera.webp" alt="Sala de espera con sillones de cuero y una obra de arte colorida" width="1300" height="975" loading="lazy"></button><figcaption>Sala de espera</figcaption></figure>
+        <figure class="ph b rv" style="--d:.08s"><button type="button" data-zoom="img/entrada.webp" data-g="mat" data-alt="Entrada"><img src="img/entrada.webp" alt="Entrada del consultorio con una alfombra de bienvenida y una escultura de un diente en la pared" width="1000" height="1333" loading="lazy"></button><figcaption>Entrada</figcaption></figure>
+        <figure class="ph c rv"><button type="button" data-zoom="img/operatorio-1.webp" data-g="mat" data-alt="Sala de tratamiento"><img src="img/operatorio-1.webp" alt="Sala de tratamiento con un sillón dental y una ventana grande" width="1300" height="975" loading="lazy"></button><figcaption>Sala de tratamiento</figcaption></figure>
+        <figure class="ph d rv" style="--d:.08s"><button type="button" data-zoom="img/operatorio-2.webp" data-g="mat" data-alt="Segunda sala de tratamiento"><img src="img/operatorio-2.webp" alt="Segunda sala de tratamiento con un sillón dental y monitores" width="1300" height="975" loading="lazy"></button><figcaption>Segunda sala de tratamiento</figcaption></figure>
+        <figure class="ph e rv" style="--d:.16s"><button type="button" data-zoom="img/fachada.webp" data-g="mat" data-alt="Fachada en Welleby Plaza"><img src="img/fachada.webp" alt="Fachada con el letrero Dentist en Welleby Plaza" width="1000" height="1778" loading="lazy"></button><figcaption>Fachada en Welleby Plaza</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="close">
+    <div class="wrap">
+      <div class="close-card rv">
+        <div>
+          <h2 class="serif">Gestión mensual de sus redes, <em>para que usted se dedique a sus pacientes.</em></h2>
+          <p class="lead">Nos ocupamos de su Instagram y su Facebook: creamos el contenido, lo publicamos y mantenemos sus perfiles activos, con su logo y sus colores.</p>
+        </div>
+        <div class="svc">
+          <div><b>Su Instagram y su Facebook</b>Gestión de ambos perfiles, para que se vean tan bien como su consultorio.</div>
+          <div><b>Contenido y Reels</b>Publicaciones diseñadas y videos cortos con fotos reales de su consultorio.</div>
+          <div><b>Todos los meses</b>Perfiles activos y al día, sin que usted tenga que ocuparse.</div>
+        </div>
+        <div class="sign">
+          <p><b>Santiago Capelli &middot; Ticca Mkt</b>Si le interesa, con gusto coordinamos una llamada breve.</p>
+          <ul class="contact">
+            <li><a href="https://ticca.agency" target="_blank" rel="noopener">ticca.agency</a></li>
+            <li><a href="mailto:capellisantiagoemp@gmail.com">capellisantiagoemp@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <span>Propuesta preparada para Welleby Family Dental &middot; 10127 W Oakland Park Blvd, Sunrise, FL 33351</span>
+        <span>Tel. (954) 748-7100</span>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<dialog id="lb" aria-label="Imagen ampliada">
+  <button type="button" class="x" id="lbx" aria-label="Cerrar">&times;</button>
+  <button type="button" class="nav prev" id="lbp" aria-label="Anterior">&larr;</button>
+  <button type="button" class="nav next" id="lbn" aria-label="Siguiente">&rarr;</button>
+  <div class="box" id="lbbox"><img id="lbimg" alt=""></div>
+  <div class="cap" id="lbcap"></div>
+</dialog>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* reveal on scroll */
+  var rv = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -5% 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  } else rv.forEach(function(el){el.classList.add('in')});
+
+  /* active section in nav */
+  var links = document.querySelectorAll('.steps a');
+  if('IntersectionObserver' in window){
+    var so = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+    ['hoy','propuesta','material'].forEach(function(id){so.observe(document.getElementById(id))});
+  }
+
+  /* carousel arrows */
+  var rail = document.getElementById('rail');
+  function step(d){ var p = rail.querySelector('.post'); rail.scrollBy({left:d*(p.offsetWidth+18), behavior: reduce?'auto':'smooth'}); }
+  document.getElementById('rprev').addEventListener('click', function(){ step(-1); });
+  document.getElementById('rnext').addEventListener('click', function(){ step(1); });
+
+  /* lightbox */
+  var lb=document.getElementById('lb'), img=document.getElementById('lbimg'), box=document.getElementById('lbbox'), cap=document.getElementById('lbcap');
+  var group=[], idx=0;
+  function show(){ var el=group[idx]; img.src=el.dataset.zoom; img.alt=el.dataset.alt||''; box.scrollTop=0; lb.classList.toggle('wide', el.dataset.g==='hoy'||el.dataset.g==='mat'); cap.textContent = group.length>1 ? (idx+1)+' / '+group.length : ''; document.getElementById('lbp').hidden=document.getElementById('lbn').hidden = group.length<2; }
+  function open(el){ group=[].slice.call(document.querySelectorAll('[data-zoom][data-g="'+el.dataset.g+'"]')); idx=group.indexOf(el); show(); if(lb.showModal) lb.showModal(); else lb.setAttribute('open',''); }
+  function close(){ lb.close?lb.close():lb.removeAttribute('open'); }
+  function go(d){ if(group.length<2) return; idx=(idx+d+group.length)%group.length; show(); }
+  document.querySelectorAll('[data-zoom]').forEach(function(el){
+    el.addEventListener('click',function(){open(el)});
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(el)}});
+  });
+  document.getElementById('lbx').addEventListener('click',close);
+  document.getElementById('lbp').addEventListener('click',function(){go(-1)});
+  document.getElementById('lbn').addEventListener('click',function(){go(1)});
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target===box)close()});
+  lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1)});
+})();
+</script>
+</body>
+</html>
